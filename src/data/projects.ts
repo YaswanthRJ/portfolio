@@ -87,9 +87,9 @@ The project is also structured as three independently developed applications: a 
     name: 'Hogsaloon',
     year: 2026,
     tagline: 'A temporary chat platform that matches compatible strangers for real-time conversations with no permanent message retention.',
-    description: `Hogsaloon is a real-time chat platform designed around spontaneous, ephemeral conversations. Users maintain permanent accounts with profiles, interests, and conversation preferences, but individual conversations are intentionally temporary. Instead of browsing users or swiping through profiles, a matchmaking system automatically places compatible users together and lets both participants accept or skip the pairing.
+    description: `Hogsaloon is a real-time chat platform designed around spontaneous, ephemeral conversations. Users maintain permanent accounts with profiles, interests, and conversation preferences, but individual conversations are intentionally temporary. Instead of browsing users or swiping through profiles, a matchmaking system automatically places compatible users together using both thier preferences and languages.
 
-Once a match is accepted, the conversation runs in real time through Socket.IO. Messages are never permanently persisted; Redis temporarily retains only the latest 20 messages for the active session, allowing users to recover recent conversation state after a refresh or reconnect. Sessions can remain active for up to five hours, after which the conversation and its temporary message data are removed.
+Once a match is decided, the conversation runs in real time through Socket.IO. Messages are never permanently persisted; Redis temporarily retains only the latest 20 messages for the active session, allowing users to recover recent conversation state after a refresh or reconnect. Sessions can remain active for up to five hours, after which the conversation and its temporary message data are removed.
 
 The application combines a React client with a NestJS backend and Socket.IO for real-time communication, with Redis handling the short-lived conversation state and matchmaking-related data. User profiles support display names, profile pictures, bios, interests, and conversation preferences, while Cloudinary handles profile image storage.`,
     stack: [
@@ -105,7 +105,7 @@ The application combines a React client with a NestJS backend and Socket.IO for 
       'Designed ephemeral conversation storage where Redis retains only the latest 20 messages during an active session.',
       'Implemented five-hour conversation expiry with automatic cleanup of temporary message data.',
       'Built a queue-based flow for matchmaking, prioritizing user preferances.',
-      'Created persistent user profiles with interests, conversation preferences, and Cloudinary-backed profile images while keeping conversation data temporary.',
+      'Created persistent user profiles with interests, and Cloudinary-backed profile images while keeping conversation data temporary.',
     ],
     images: [
       '/hogsaloon/Screenshot 2026-09-27 102924.png',
