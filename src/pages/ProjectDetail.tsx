@@ -23,8 +23,8 @@ export default function ProjectDetail() {
 
   useEffect(() => {
     document.title = project
-      ? `${project.name} — Your Name`
-      : 'Project not found — Your Name';
+      ? `${project.name} — Yaswanth Raj`
+      : 'Project not found — Yaswanth Raj';
   }, [project]);
 
   if (!project) {

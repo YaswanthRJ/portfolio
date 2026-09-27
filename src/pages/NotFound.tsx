@@ -4,7 +4,7 @@ import PageLayout from '../components/PageLayout';
 
 export default function NotFound() {
   useEffect(() => {
-    document.title = 'Page not found — Your Name';
+    document.title = 'Page not found — Yaswanth Raj';
   }, []);
 
   return (
