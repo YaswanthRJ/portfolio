@@ -10,9 +10,9 @@ const ArrowUpRightIcon = () => (
 );
 
 const profileLinks = {
-  resume: import.meta.env.VITE_RESUME_URL || '/resume.pdf',
-  github: import.meta.env.VITE_GITHUB_URL || 'https://github.com/yourname',
-  linkedin: import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/yourname',
+  resume: import.meta.env.VITE_RESUME_URL || 'https://drive.google.com/file/d/1drddPJTFPe_4DHV_RHCPWOukDUrh55r1/view?usp=drive_link',
+  github: import.meta.env.VITE_GITHUB_URL || 'https://github.com/YaswanthRJ/',
+  linkedin: import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/yaswanth-raj-a68813400',
 };
 
 export default function Home() {
@@ -60,7 +60,7 @@ export default function Home() {
           </a>
         </div>
         <section className="flex flex-col gap-3" aria-labelledby="education-heading">
-          <h2 id="education-heading" className="text-[13px] font-medium uppercase tracking-[0.12em] text-faint">
+          <h2 id="education-heading" className="text-sm tracking-[0.12em] text-faint">
             Education
           </h2>
           <p className="text-sm leading-relaxed text-muted">
