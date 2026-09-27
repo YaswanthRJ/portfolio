@@ -54,8 +54,6 @@ The most interesting part of the project is the combat engine. Combat resolution
 The project is also structured as three independently developed applications: a React game client, a React-based administration dashboard, and a Go REST API backed by PostgreSQL. Campaign progress and individual fights are persisted in the database, while Cloudinary handles creature and campaign media. On the frontend, Framer Motion drives combat animations and Howler.js manages background music, sound effects, crossfading, and browser audio-unlock behavior.`,
     stack: [
       'React',
-      'TypeScript',
-      'Vite',
       'Go',
       'PostgreSQL',
       'Cloudinary',
